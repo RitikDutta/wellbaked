@@ -17,7 +17,7 @@ body {
   transform: rotateY(-15deg) scale(0.2);
 }
 .panel-wrap {
-  height: 100vh;
+  height: 95vh;
   width: 100vw;
 }
 h1 {
@@ -34,7 +34,7 @@ h1 {
   transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1) 0.3s;
 }
 .panel {
-  height: 95vh;
+  height: 100vh;
   position: absolute;
   transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);
   width: 100vw;
