@@ -58,6 +58,12 @@ h1 {
   align-items: center;
   height: 100%;
 }
+.heddiv{
+  font-size: 12vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @keyframes fade{
   from{
     opacity: 0;
