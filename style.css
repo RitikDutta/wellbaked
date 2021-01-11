@@ -10,6 +10,11 @@ body {
   perspective: 1000px;
   text-transform: uppercase;
 }
+.homebutton{
+  opacity: 1;
+  height: 50px;
+
+}
 .site-wrap {
   transition: transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
 }
@@ -219,7 +224,7 @@ will-change: transform;
 }
 .panel__nav {
   cursor: pointer;
-  opacity: 0.2;
+  opacity: 1;
   position: absolute;
   transition: opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1);
   user-select: none;
