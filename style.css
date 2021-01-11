@@ -33,18 +33,70 @@ h1 {
 .panel-wrap.animate--tilt2 {
   transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1) 0.3s;
 }
-.panel {
-  height: 100vh;
-  position: absolute;
-  transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);
-  width: 100vw;
-  will-change: transform;
-  animation-iteration-count: infinite;
+
+@keyframes blink{
+  0%{
+    background: #EC7063;
+  }
+  20%{
+    background: #E74C3C;
+  }
+  40%{
+    background: #CB4335;
+  }
+  60%{
+    background: #B03A2E ;
+  }
+  80%{
+    background: #943126;
+  }
+  100%{
+    background: #EC7063;
+  }
+}
   
+@-webkit-keyframes blink{
+  0%{
+    background: violet;
+  }
+  14%{
+    background: indigo;
+  }
+  30%{
+    background: blue;
+  }
+  42%{
+    background: green;
+  }
+  54%{
+    background: yellow;
+  }
+  70%{
+    background: orange;
+  }
+  85%{
+    background: red;
+  }
+  100%{
+    background: violet;
+  }
+}
+
+
+.panel {
+height: 100vh;
+position: absolute;
+transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+width: 100vw;
+will-change: transform;
+animation: blink 20s ease infinite;
+-webkit-animation: blink 20s infinite;
+
+  animation-iteration-count: infinite;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url('https://measuring-success.com/wp-content/uploads/2014/08/prism.jpg');
+  /* background-image: url('https://66.media.tumblr.com/eb3531f32145b6a16530ff5bd36c1a4a/tumblr_o86e83vJX01u3ji4yo1_500.gif'); */
 }
 
 .logo{
