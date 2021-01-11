@@ -106,6 +106,13 @@ will-change: transform;
 
   }
 }
+.frameApp{
+  border:none;
+  height: 100%;
+  width: 100%;
+}
+
+
 .logo{
     animation: fade 3s ease forwards;
     width: 35vmax;
