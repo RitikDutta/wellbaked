@@ -101,11 +101,11 @@ will-change: transform;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url('wb.jpeg');
+  background-image: url('wb1.jpg');
 }
 @media only screen and (max-width: 700px) {
   .panel {
-    background-image: url('wbc2.jpeg');
+    background-image: url('homesmall3.jpg');
     background-size: 100% 100%;
 
 

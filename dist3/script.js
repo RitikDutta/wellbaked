@@ -6,11 +6,11 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
           icons: ['gluten free'],
           amount: 12 },
 
-        'HTML-And-CSS': {
+        'CSS': {
           icons: ['gluten free'],
           amount: 27 },
 
-        'HTML-And-CSS-And-JS': {
+        'JS': {
           icons: ['gluten free'],
           amount: 52 },
 

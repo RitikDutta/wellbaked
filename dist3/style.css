@@ -36,6 +36,7 @@ h1 {
     text-transform: uppercase;
     text-shadow: 0.05em 0.05em 0.05em rgba(0, 0, 0, 0.4);
     padding: 0.7em;
+    padding-top: 70px;
 }
 
 h1 span {
@@ -479,88 +480,88 @@ h3 {
     left: 40%;
 }
 
-/* HTML-And-CSS */
+/* CSS */
 
-.HTML-And-CSS {
+.CSS {
     width: 6%;
     height: 13%;
     border-radius: 15%;
     background-image: linear-gradient(90deg, #753434 0%, #b14f4f 30%, #ecc67f 35%, #d1ad69  65%, #b14f4f 70%, #753434);
 }
 
-.HTML-And-CSS-1 {
+.CSS-1 {
     top: 38%;
     left: 40%;
     transform: translate(-50%, -50%) rotate(-30deg);
 }
 
-.HTML-And-CSS-2 {
+.CSS-2 {
     top: 30%;
     left: 65%;
     transform: translate(-50%, -50%) rotate(50deg);
 }
 
-.HTML-And-CSS-3 {
+.CSS-3 {
     top: 42%;
     left: 78%;
     transform: translate(-50%, -50%) rotate(120deg);
 }
 
-.HTML-And-CSS-4 {
+.CSS-4 {
     top: 65%;
     left: 55%;
     transform: translate(-50%, -50%) rotate(-120deg);
 }
 
-.HTML-And-CSS-5 {
+.CSS-5 {
     top: 75%;
     left: 75%;
     transform: translate(-50%, -50%) rotate(50deg);
 }
 
-.HTML-And-CSS-6 {
+.CSS-6 {
     top: 60%;
     left: 38%;
     transform: translate(-50%, -50%) rotate(0deg);
 }
 
-.HTML-And-CSS-7 {
+.CSS-7 {
     top: 50%;
     left: 20%;
     transform: translate(-50%, -50%) rotate(90deg);
 }
 
-.HTML-And-CSS-8 {
+.CSS-8 {
     top: 25%;
     left: 25%;
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.HTML-And-CSS-9 {
+.CSS-9 {
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(100deg);
 }
 
-.HTML-And-CSS-10 {
+.CSS-10 {
     top: 82%;
     left: 45%;
     transform: translate(-50%, -50%) rotate(100deg);
 }
 
-.HTML-And-CSS-11 {
+.CSS-11 {
     top: 58%;
     left: 75%;
     transform: translate(-50%, -50%) rotate(-30deg);
 }
 
-.HTML-And-CSS-12 {
+.CSS-12 {
     top: 72%;
     left: 25%;
     transform: translate(-50%, -50%) rotate(150deg);
 }
 
-.HTML-And-CSS-13 {
+.CSS-13 {
     top: 48%;
     left: 56%;
     transform: translate(-50%, -50%) rotate(45deg);
@@ -645,11 +646,11 @@ h3 {
     left: 15%;
 }
 
-/* HTML-And-CSS-And-JS */
+/* JS */
 
 
 
-.HTML-And-CSS-14 {
+.CSS-14 {
     width: 12%;
     height: 7%;
     border-radius: 15%;
@@ -660,7 +661,7 @@ h3 {
     transform: translate(-50%, -50%) rotate(-10deg);
 }
 
-.HTML-And-CSS-15 {
+.CSS-15 {
     width: 12%;
     height: 7%;
     border-radius: 15%;
@@ -670,7 +671,7 @@ h3 {
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.HTML-And-CSS-16 {
+.CSS-16 {
     width: 12%;
     height: 7%;
     border-radius: 15%;
@@ -680,7 +681,7 @@ h3 {
     transform: translate(-50%, -50%) rotate(-20deg);
 }
 
-.HTML-And-CSS-17 {
+.CSS-17 {
     width: 12%;
     height: 7%;
     border-radius: 15%;
@@ -690,7 +691,7 @@ h3 {
     transform: translate(-50%, -50%) rotate(5deg);
 }
 
-.HTML-And-CSS-18 {
+.CSS-18 {
     width: 12%;
     height: 7%;
     border-radius: 15%;
@@ -700,7 +701,7 @@ h3 {
     transform: translate(-50%, -50%) rotate(25deg);
 }
 
-.HTML-And-CSS-19 {
+.CSS-19 {
     width: 12%;
     height: 7%;
     border-radius: 15%;
@@ -710,7 +711,7 @@ h3 {
     transform: translate(-50%, -50%) rotate(150deg);
 }
 
-.HTML-And-CSS-20 {
+.CSS-20 {
     width: 12%;
     height: 7%;
     border-radius: 15%;
@@ -720,7 +721,7 @@ h3 {
     transform: translate(-50%, -50%) rotate(10deg);
 }
 
-.HTML-And-CSS-21 {
+.CSS-21 {
     width: 12%;
     height: 7%;
     border-radius: 15%;
@@ -730,7 +731,7 @@ h3 {
     transform: translate(-50%, -50%) rotate(30deg);
 }
 
-.HTML-And-CSS-22 {
+.CSS-22 {
     width: 12%;
     height: 7%;
     border-radius: 15%;
@@ -740,7 +741,7 @@ h3 {
     transform: translate(-50%, -50%) rotate(-70deg);
 }
 
-.HTML-And-CSS-23 {
+.CSS-23 {
     width: 12%;
     height: 7%;
     border-radius: 15%;
@@ -750,7 +751,7 @@ h3 {
     transform: translate(-50%, -50%) rotate(30deg);
 }
 
-.HTML-And-CSS-24 {
+.CSS-24 {
     width: 12%;
     height: 7%;
     border-radius: 15%;
@@ -760,7 +761,7 @@ h3 {
     transform: translate(-50%, -50%) rotate(-30deg);
 }
 
-.HTML-And-CSS-25 {
+.CSS-25 {
     width: 12%;
     height: 7%;
     border-radius: 15%;
@@ -770,7 +771,7 @@ h3 {
     transform: translate(-50%, -50%) rotate(-100deg);
 }
 
-.HTML-And-CSS-26 {
+.CSS-26 {
     width: 12%;
     height: 7%;
     border-radius: 15%;
@@ -780,7 +781,7 @@ h3 {
     transform: translate(-50%, -50%) rotate(-40deg);
 }
 
-.HTML-And-CSS-27 {
+.CSS-27 {
     width: 12%;
     height: 7%;
     border-radius: 15%;
@@ -792,7 +793,7 @@ h3 {
 
 /* Mushroom */
 
-.HTML-And-CSS-And-JS {
+.JS {
     width: 8%;
     height: 5%;
     border: none;
@@ -817,7 +818,7 @@ h3 {
 
 /* Peppers */
 
-.HTML-And-CSS-And-JS {
+.JS {
     width: 3%;
     height: 15%;
     border: none;
@@ -830,7 +831,7 @@ h3 {
     background-image: linear-gradient(90deg, #af1616, #fca4b2);
 }
 
-.HTML-And-CSS-And-JS-1 {
+.JS-1 {
     width: 3%;
     height: 15%;
     border: none;
@@ -842,7 +843,7 @@ h3 {
     transform: translate(-50%, -50%) rotate(120deg);
 }
 
-.HTML-And-CSS-And-JS-2 {
+.JS-2 {
 
 width: 3%;
     height: 15%;
@@ -854,7 +855,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(5deg);
 }
 
-.HTML-And-CSS-And-JS-3 {
+.JS-3 {
 
 width: 3%;
     height: 15%;
@@ -866,7 +867,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(-15deg);
 }
 
-.HTML-And-CSS-And-JS-4 {
+.JS-4 {
 
 width: 3%;
     height: 15%;
@@ -878,7 +879,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(15deg);
 }
 
-.HTML-And-CSS-And-JS-5 {
+.JS-5 {
 
 width: 3%;
     height: 15%;
@@ -890,7 +891,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(50deg);
 }
 
-.HTML-And-CSS-And-JS-6 {
+.JS-6 {
 
 width: 3%;
     height: 15%;
@@ -902,7 +903,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(20deg);
 }
 
-.HTML-And-CSS-And-JS-7 {
+.JS-7 {
 
 width: 3%;
     height: 15%;
@@ -914,7 +915,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(-30deg);
 }
 
-.HTML-And-CSS-And-JS-8 {
+.JS-8 {
 
 width: 3%;
     height: 15%;
@@ -926,7 +927,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(20deg);
 }
 
-.HTML-And-CSS-And-JS-9 {
+.JS-9 {
 
 width: 3%;
     height: 15%;
@@ -938,7 +939,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(-20deg);
 }
 
-.HTML-And-CSS-And-JS-10 {
+.JS-10 {
     width: 3%;
     height: 15%;
     border: none;
@@ -950,7 +951,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(80deg);
 }
 
-.HTML-And-CSS-And-JS-11 {
+.JS-11 {
     width: 3%;
     height: 15%;
     border: none;
@@ -962,7 +963,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(10deg);
 }
 
-.HTML-And-CSS-And-JS-12 {
+.JS-12 {
     width: 3%;
     height: 15%;
     border: none;
@@ -974,7 +975,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(130deg);
 }
 
-.HTML-And-CSS-And-JS-13 {
+.JS-13 {
     width: 3%;
     height: 15%;
     border: none;
@@ -986,7 +987,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(-80deg);
 }
 
-.HTML-And-CSS-And-JS-14 {
+.JS-14 {
     width: 3%;
     height: 15%;
     border: none;
@@ -998,7 +999,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(-20deg);
 }
 
-.HTML-And-CSS-And-JS-15 {
+.JS-15 {
     width: 3%;
     height: 15%;
     border: none;
@@ -1009,7 +1010,7 @@ width: 3%;
     left: 72%;
     transform: translate(-50%, -50%) rotate(-135deg);
 }
-.HTML-And-CSS-And-JS-31 {
+.JS-31 {
     width: 8%;
     height: 5%;
     border: none;
@@ -1022,7 +1023,7 @@ width: 3%;
     
 }
 
-.HTML-And-CSS-And-JS-32 {
+.JS-32 {
     width: 8%;
     height: 5%;
     border: none;
@@ -1034,7 +1035,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(30deg);
 }
 
-.HTML-And-CSS-And-JS-33 {
+.JS-33 {
     width: 8%;
     height: 5%;
     border: none;
@@ -1046,7 +1047,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-.HTML-And-CSS-And-JS-34 {
+.JS-34 {
     width: 8%;
     height: 5%;
     border: none;
@@ -1058,7 +1059,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(-135deg);
 }
 
-.HTML-And-CSS-And-JS-35 {
+.JS-35 {
     width: 8%;
     height: 5%;
     border: none;
@@ -1070,7 +1071,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(-100deg);
 }
 
-.HTML-And-CSS-And-JS-36 {
+.JS-36 {
     width: 8%;
     height: 5%;
     border: none;
@@ -1082,7 +1083,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(50deg);
 }
 
-.HTML-And-CSS-And-JS-37 {
+.JS-37 {
     width: 8%;
     height: 5%;
     border: none;
@@ -1094,7 +1095,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(120deg);
 }
 
-.HTML-And-CSS-And-JS-38 {
+.JS-38 {
     width: 8%;
     height: 5%;
     border: none;
@@ -1106,7 +1107,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(190deg);
 }
 
-.HTML-And-CSS-And-JS-39 {
+.JS-39 {
     width: 8%;
     height: 5%;
     border: none;
@@ -1118,7 +1119,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(20deg);
 }
 
-.HTML-And-CSS-And-JS-40 {
+.JS-40 {
     width: 8%;
     height: 5%;
     border: none;
@@ -1130,7 +1131,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(20deg);
 }
 
-.HTML-And-CSS-And-JS-41 {
+.JS-41 {
     width: 8%;
     height: 5%;
     border: none;
@@ -1142,7 +1143,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(20deg);
 }
 
-.HTML-And-CSS-And-JS-42 {
+.JS-42 {
     width: 8%;
     height: 5%;
     border: none;
@@ -1154,7 +1155,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(20deg);
 }
 
-.HTML-And-CSS-And-JS-43 {
+.JS-43 {
     width: 8%;
     height: 5%;
     border: none;
@@ -1166,7 +1167,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(70deg);
 }
 
-.HTML-And-CSS-And-JS-44 {
+.JS-44 {
     width: 8%;
     height: 5%;
     border: none;
@@ -1178,7 +1179,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(200deg);
 }
 
-.HTML-And-CSS-And-JS-45 {
+.JS-45 {
     width: 8%;
     height: 5%;
     border: none;
@@ -1190,7 +1191,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(-20deg);
 }
 
-.HTML-And-CSS-And-JS-46 {
+.JS-46 {
     width: 8%;
     height: 5%;
     border: none;
@@ -1202,7 +1203,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(140deg);
 }
 
-.HTML-And-CSS-And-JS-47 {
+.JS-47 {
     width: 8%;
     height: 5%;
     border: none;
@@ -1214,7 +1215,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(100deg);
 }
 
-.HTML-And-CSS-And-JS-48 {
+.JS-48 {
     width: 8%;
     height: 5%;
     border: none;
@@ -1226,7 +1227,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.HTML-And-CSS-And-JS-49 {
+.JS-49 {
     width: 8%;
     height: 5%;
     border: none;
@@ -1238,7 +1239,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.HTML-And-CSS-And-JS-50 {
+.JS-50 {
     width: 8%;
     height: 5%;
     border: none;
@@ -1250,7 +1251,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-.HTML-And-CSS-And-JS-51 {
+.JS-51 {
     width: 8%;
     height: 5%;
     border: none;
@@ -1262,7 +1263,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(-25deg);
 }
 
-.HTML-And-CSS-And-JS-52 {
+.JS-52 {
     width: 8%;
     height: 5%;
     border: none;
@@ -1285,7 +1286,7 @@ width: 3%;
     z-index: 2;
 }
 
-.HTML-And-CSS-And-JS-16 {
+.JS-16 {
     width: 3%;
     height: 15%;
     border: none;
@@ -1298,7 +1299,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(80deg);
 }
 
-.HTML-And-CSS-And-JS-17 {
+.JS-17 {
     width: 3%;
     height: 15%;
     border: none;
@@ -1311,7 +1312,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(80deg);
 }
 
-.HTML-And-CSS-And-JS-18{
+.JS-18{
 
     width: 3%;
     height: 15%;
@@ -1324,7 +1325,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(135deg);
 }
 
-.HTML-And-CSS-And-JS-19 {
+.JS-19 {
     width: 3%;
     height: 15%;
     border: none;
@@ -1337,7 +1338,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(50deg);
 }
 
-.HTML-And-CSS-And-JS-20 {
+.JS-20 {
     width: 3%;
     height: 15%;
     border: none;
@@ -1350,7 +1351,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(80deg);
 }
 
-.HTML-And-CSS-And-JS-21 {
+.JS-21 {
     width: 3%;
     height: 15%;
     border: none;
@@ -1363,7 +1364,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(-30deg);
 }
 
-.HTML-And-CSS-And-JS-22 {
+.JS-22 {
     width: 3%;
     height: 15%;
     border: none;
@@ -1376,7 +1377,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(-10deg);
 }
 
-.HTML-And-CSS-And-JS-23 {
+.JS-23 {
     width: 3%;
     height: 15%;
     border: none;
@@ -1389,7 +1390,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(50deg);
 }
 
-.HTML-And-CSS-And-JS-24 {
+.JS-24 {
     width: 3%;
     height: 15%;
     border: none;
@@ -1402,7 +1403,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(20deg);
 }
 
-.HTML-And-CSS-And-JS-25 
+.JS-25 
 {
     width: 3%;
     height: 15%;
@@ -1415,7 +1416,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(-30deg);
 }
 
-.HTML-And-CSS-And-JS-26
+.JS-26
 {
     width: 3%;
     height: 15%;
@@ -1428,7 +1429,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(70deg);
 }
 
-.HTML-And-CSS-And-JS-27
+.JS-27
 {
     width: 3%;
     height: 15%;
@@ -1441,7 +1442,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-.HTML-And-CSS-And-JS-28
+.JS-28
 {
     width: 3%;
     height: 15%;
@@ -1454,7 +1455,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(-70deg);
 }
 
-.HTML-And-CSS-And-JS-29
+.JS-29
 {
     width: 3%;
     height: 15%;
@@ -1467,7 +1468,7 @@ width: 3%;
     transform: translate(-50%, -50%) rotate(160deg);
 }
 
-.HTML-And-CSS-And-JS-30
+.JS-30
 {
     width: 3%;
     height: 15%;
