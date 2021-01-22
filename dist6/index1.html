@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,200;1,500&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<title></title>
+	<style type="text/css">
+
+df-messenger {
+            --df-messenger-bot-message: #fafafa;
+            --df-messenger-button-titlebar-color: #42a5f5;
+            --df-messenger-chat-background-color: #fafafa;
+            --df-messenger-font-color: black;
+            --df-messenger-send-icon: #878fac;
+			--df-messenger-user-message: #479b3d;
+			
+        }
+
+
+
+
+	body{
+		background-image: url("ContactBG.jpg");
+		padding-left: 30%;
+		padding-top: 10%;
+	}
+	.fnt{
+		font-family: Fraunces;
+		font-size: 500%;
+	}
+	.fnt2{
+		font-family: Open Sans;
+		font-size: 100%;
+	}
+	.imgsz{
+		size: 10%;
+	}
+	.bc{
+ 	 width: 0.9em;
+	 height: 1em;		 
+	}
+	.iconsize{
+		width: 2%;
+	}
+		
+	</style>
+</head>
+<body>
+
+
+	<b class="fnt"><b>We're here</b></b>
+<h6 class="fnt2">Always Open For A Cup Of Coffee</h6>
+<h3><b>Our Office</b> </h5>
+<h6 class="fnt2">Block A Amrapali circle <br> 1053 Jaipur <br>India <img  class="bc" src="india.svg">
+</h6>	
+
+<a href="https://twitter.com/home">
+	<img class="iconsize" src="twitter.gif">
+</a>
+<a href="https://www.facebook.com/Wellbakedtech-101466415283646">
+	<img class="iconsize" src="fb.gif">
+</a>
+<a href="https://www.instagram.com/wellbakedtech">
+	<img class="iconsize" src="insta.png">
+</a>
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="chbt_contact"
+  agent-id="05989e8e-f27c-44a8-b078-dd8c16f5e32c"
+  language-code="en"
+></df-messenger>
+</body>
+</html>
