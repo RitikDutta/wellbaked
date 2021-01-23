@@ -467,6 +467,21 @@ body > .container-fluid {
          border-radius: 3%;
       }
     }
+    
+    
+    @media only screen and (max-width: 414px) {
+      .img1{
+        height: 100%;
+        width: 170%;
+        border-radius: 3%;
+      }
+      .img2{
+        margin-left: -15%;
+        height: 100%; 
+        width: 90%;
+         border-radius: 3%;
+      }
+    }
     @media only screen and (max-width: 393px) {
       .img1{
         height: 100%;
@@ -490,19 +505,6 @@ body > .container-fluid {
         margin-left: -28%;
         height: 100%; 
         width: 78%;
-         border-radius: 3%;
-      }
-    }
-    @media only screen and (max-width: 414px) {
-      .img1{
-        height: 100%;
-        width: 170%;
-        border-radius: 3%;
-      }
-      .img2{
-        margin-left: -15%;
-        height: 100%; 
-        width: 90%;
          border-radius: 3%;
       }
     }
