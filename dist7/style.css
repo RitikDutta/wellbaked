@@ -43,7 +43,7 @@ body {
   height: 100%;
   font-family: "Comfortaa", Helvetica, Arial, sans-serif;
   background-color: #CE5937;
-  width: 10%;
+  width: 96%;
   /* Margin bottom by footer height */
   margin-bottom: 60px; }
 
@@ -245,7 +245,7 @@ body > .container-fluid {
     left: 10px; 
     right: 10px; 
     bottom: 10px; 
-    width: 50%;
+    width: 150px;
  
     
 }
@@ -270,7 +270,7 @@ body > .container-fluid {
     left: 10px; 
     right: 10px; 
     bottom: 10px; 
-    width: 50%;    
+    width: 150px;    
 }
 
 #slideshow3 { 
@@ -292,7 +292,7 @@ body > .container-fluid {
     left: 10px; 
     right: 10px; 
     bottom: 10px; 
-    width: 50%;
+    width: 150px;
  
     
 }
@@ -316,7 +316,7 @@ body > .container-fluid {
     left: 10px; 
     right: 10px; 
     bottom: 10px; 
-    width: 50%;    
+    width: 150px;    
 }
 
 
@@ -341,7 +341,7 @@ body > .container-fluid {
 
 .img1{
   height: 100%;
-  width: 190%;
+  width: 255%;
   border-radius: 3%;
 }
 .img2{
@@ -367,7 +367,7 @@ body > .container-fluid {
 }
 
 
-    /* @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: 500px) {
       #slideshow{ 
         background-color:white;
         border-radius: 5%;
@@ -467,21 +467,6 @@ body > .container-fluid {
          border-radius: 3%;
       }
     }
-    
-    
-    @media only screen and (max-width: 414px) {
-      .img1{
-        height: 100%;
-        width: 170%;
-        border-radius: 3%;
-      }
-      .img2{
-        margin-left: -15%;
-        height: 100%; 
-        width: 90%;
-         border-radius: 3%;
-      }
-    }
     @media only screen and (max-width: 393px) {
       .img1{
         height: 100%;
@@ -507,5 +492,18 @@ body > .container-fluid {
         width: 78%;
          border-radius: 3%;
       }
-    } */
+    }
+    @media only screen and (max-width: 414px) {
+      .img1{
+        height: 100%;
+        width: 170%;
+        border-radius: 3%;
+      }
+      .img2{
+        margin-left: -15%;
+        height: 100%; 
+        width: 90%;
+         border-radius: 3%;
+      }
+    }
      
