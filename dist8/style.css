@@ -1,3 +1,6 @@
+html {
+  scroll-behavior:smooth;
+}
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -28,6 +31,7 @@ th{
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
   border: 30px solid rgb(235, 234, 234);
 }
+
 tr{
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
 }
@@ -80,6 +84,7 @@ table{
   font-family: "Dax", sans-serif;
   font-weight: 900;
 }
+
 .middle .box:hover{
   box-shadow: rgba(8, 58, 221, 0.856) 0px 5px 15px;
   background-color: gold;
@@ -129,6 +134,40 @@ table{
   color: yellow;
 }
 
+
+
+@media only screen and (max-width: 500px) {
+  .th1 {
+    width: 80%;
+  }
+
+  .middle .box {
+    border-radius: 100%;
+    width: 10vw;
+    height: 12vw;
+    background-color: rgb(235, 234, 234);
+    transition: all 250ms ease;
+    will-change: transition;
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    font-family: "Dax", sans-serif;
+    font-weight: 900;
+    font-size: 8px;
+
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .short-text { display: inline-block; }
+  .full-text { display: none; }
+}
+@media only screen and (min-width: 501px) {
+  .short-text { display: none; }
+  .full-text { display: inline-block; }
+}
 
 
 
