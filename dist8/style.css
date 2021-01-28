@@ -1,19 +1,46 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: white;
+  background-color: rgb(235, 234, 234);
 }
 
 .topnav {
-  padding-top: 1%;
+  background-image: linear-gradient(to bottom, #151519 0%,rgba(21,21,25,0.9) 15%,rgba(21,21,25,0.7) 30%,rgba(21,21,25,0.6) 40%,rgba(21,21,25,0.5) 50%,rgba(21,21,25,0.4) 60%,rgba(21,21,25,0.3) 70%,rgba(21,21,25,0.2) 80%,rgba(21,21,25,0.1) 85%,rgba(21,21,25,0) 98%);
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  padding-bottom: 5%;
+  padding-top: 1.5%;
   width: 100%;
   overflow: hidden;
-  background-color: black;
+  
   text-align: center;
 }
-th {
-  border: 50px solid rgb(255, 255, 255);
+th{
+  width: 33%;
+  border: 3px solid rgb(235, 234, 234);
+  
 }
+.th1 {
+  width: 45%;
+  
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+  border: 30px solid rgb(235, 234, 234);
+}
+tr{
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+}
+.th2{
+  width: 33%;
+  border: 3px solid rgb(235, 234, 234);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+table{
+ 
+  padding: 1%;
+}
+
 .middle {
   width: 100%;
   text-align: center;
@@ -23,17 +50,17 @@ th {
   font-family: "Dax", sans-serif;
   color: #fff;
 }
-.middle input[type=radio] {
+.middle input[type=button] {
   display: none;
 }
-.middle input[type=radio]:checked + .box {
+.middle input[type=button]:checked + .box {
   background-color: #007e90;
 }
-.middle input[type=radio]:checked + .box span {
+.middle input[type=button]:checked + .box span {
   color: white;
   transform: translateY(70px);
 }
-.middle input[type=radio]:checked + .box span:before {
+.middle input[type=button]:checked + .box span:before {
   transform: translateY(0px);
   opacity: 1;
 }
@@ -43,7 +70,7 @@ th {
   border-radius: 100%;
   width: 100px;
   height: 100px;
-  background-color: #fff;
+  background-color: rgb(235, 234, 234);
   transition: all 250ms ease;
   will-change: transition;
   display: inline-block;
@@ -52,6 +79,10 @@ th {
   position: relative;
   font-family: "Dax", sans-serif;
   font-weight: 900;
+}
+.middle .box:hover{
+  box-shadow: rgba(8, 58, 221, 0.856) 0px 5px 15px;
+  background-color: gold;
 }
 .middle .box:active {
   transform: translateY(10px);
@@ -97,3 +128,13 @@ th {
   font-family: FontAwesome;
   color: yellow;
 }
+
+
+
+
+
+
+
+
+
+

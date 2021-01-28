@@ -10,44 +10,86 @@
   
 </style>
 <body>
+
   <div class="topnav">
-    <b style="color: aliceblue; font-size: xx-large;">BLOGS</b>
+    <img src="BLOG.gif" alt="" style="margin-top: -3%; width: 25vmin;">
   </div>
+  <br><br><br><br>
   <table>
     <tr>
-      <th>
+      <th class="th1 effect5">
         <div id="medium-widget"></div>
         
       </th>
-      <th>
+      <th class="th1">
         <div id="medium-widget2"></div>
       </th>
-      <th>
+      <th class="th2">
+        <b >BLOGS BY: </b> <br> <br>
         <div class="middle">
   
           <label>
-          <input type="radio" name="radio" checked/>
-          <div class="front-end box" style="background-image: url('rtk.png');  background-repeat: no-repeat;  background-size: 100%;">
-            <span>RITIK 
-            </span>
+            <a href="#medium-widget4">
+              <input type="button" name="name" /> 
+            </a>
+          <div class="front-end box" style="background-image: url('rtk.png');  background-repeat: no-repeat;  background-size: 100%; padding: 10%;">
+            <span>Ritik</span>
           </div>
         </label>
-        <br> <br>
+          <br> <br>
           <label>
-          <input type="radio" name="radio"/>
-          <div class="back-end box" style="background-image: url('rhn2.png');  background-repeat: no-repeat;  background-size: 105%;">
-            <span>ROHAN</span>
+            <a href="#medium-widget5">
+              <input type="button" name="name">   
+            </a>
+          <div class="back-end box" style="background-image: url('rhn2.png');  background-repeat: no-repeat;  background-size: 105%; padding: 10%;">
+            <span>Rohan</span>
           </div>
         </label>
           
         </div>
       </th>
     </tr>
+    
   </table>
+
+<div id="page2">
+    <table>
+      <tr>
+        <th>
+          <div id="medium-widget3"></div>
+        </th>
+      
+      </tr>
+
+      <tr>
+        <th>
+          <div id="medium-widget4"></div>
+        </th>
+      
+      </tr>
+
+      <tr>
+        <th>
+          <div id="medium-widget5"></div>
+        </th>
+      
+      </tr>
+
+
+    </table>
+</div>
+  
+
+  
+  
   
   
   <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
 <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@ritikduttagd","postsPerLine":1,"limit":1,"picture":"big","fields":["description","author"],"ratio":"landscape"}})</script>
 <script>MediumWidget.Init({renderTo: '#medium-widget2', params: {"resource":"https://medium.com/@rohan397gupta","postsPerLine":1,"limit":1,"picture":"big","fields":["description","author"],"ratio":"landscape"}})</script>
+<script>MediumWidget.Init({renderTo: '#medium-widget3', params: {"resource":"https://medium.com/@wellbakedtech","postsPerLine":3,"limit":3,"picture":"big","fields":["description","author"],"ratio":"landscape"}})</script>
+<script>MediumWidget.Init({renderTo: '#medium-widget4', params: {"resource":"https://medium.com/@ritikduttagd","postsPerLine":3,"limit":3,"picture":"big","fields":["description","author"],"ratio":"landscape"}})</script>
+<script>MediumWidget.Init({renderTo: '#medium-widget5', params: {"resource":"https://medium.com/@rohan397gupta","postsPerLine":3,"limit":3,"picture":"big","fields":["description","author"],"ratio":"landscape"}})</script>
+
 </body>
 </html>
