@@ -177,3 +177,30 @@ table{
 
 
 
+.text {
+  text-align: center;
+  padding-left: 3.5%;
+  width: 90%;
+  /* margin-top: 80px; */
+  color: #fff;
+  font-size: 4em;
+  font-family: 'Londrina Solid', cursive;
+  text-transform: uppercase;
+}
+
+.animated {
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.1);}
+  100% {transform: scale(1);}
+}
+.pulse {
+  animation-name: pulse;
+  animation-duration: 1s;
+}

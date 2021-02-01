@@ -108,13 +108,44 @@ will-change: transform;
   background-size: cover;
   background-image: url('wb1.jpg');
 }
-@media only screen and (max-width: 700px) {
+
+div.highlightTextOut a
+{
+    color:rgb(36, 35, 35); 
+}
+
+div.highlightTextOut a:before, div.highlightTextIn a:before
+{
+    position: absolute;
+    color: #FFF;
+    top: 0px;
+    left: 0px;
+    padding: 0px;
+    overflow: hidden;
+    content: attr(alt);
+    transition: all 0.1s;
+    transform: scale(0.8);
+    opacity: 0;
+} 
+
+div.highlightTextOut a:hover:before, div.highlightTextIn a:hover:before
+{
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+@media only screen and (max-width: 500px) {
   .panel {
     background-image: url('homesmall3.jpg');
     background-size: 100% 100%;
 
 
   }
+  div.highlightTextOut a
+{
+    color:white; 
+}
 }
 .frameApp{
   border:none;
@@ -242,7 +273,7 @@ will-change: transform;
 }
 .panel__nav--left {
   left: 1rem;
-  top: 50%;
+  top: 43%;
   transform: translateY(-50%) rotate(-90deg) translateX(-100%);
   transform-origin: top left;
 }
@@ -256,7 +287,7 @@ will-change: transform;
 }
 .panel__nav--right {
   right: 1rem;
-  top: 50%;
+  top: 38%;
   transform: translateY(-50%) rotate(90deg) translateX(100%);
   transform-origin: top right;
 }
@@ -269,7 +300,7 @@ will-change: transform;
   right: 1.5rem;
 }
 .panel__nav--right-down2 {
-  bottom: 5rem;
+  bottom: 1.5rem;
   right: 1.5rem;
 }
 .panel__nav--down {
@@ -277,10 +308,10 @@ will-change: transform;
   left: 50%;
   transform: translateX(-50%);
 }
-.panel__nav--down:hover{
+/* .panel__nav--down:hover{
   text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
 
-}
+} */
 
 @media only screen and (max-width: 540px) {
   .panel__nav--right-down {
@@ -301,6 +332,7 @@ will-change: transform;
 @media only screen and (max-width: 500px) {
   .short-text { display: inline-block; }
   .full-text { display: none; }
+
 }
 @media only screen and (min-width: 501px) {
   .short-text { display: none; }
@@ -346,3 +378,10 @@ will-change: transform;
 .panel__animation-list span:hover:after {
   border-color: white;
 }
+
+
+
+
+
+
+

@@ -533,7 +533,7 @@ tr:nth-child(even) {
 }
 @media only screen and (max-width: 500px) {
   .pclass{
-    font-size: 4vw; 
+    font-size: 3.5vw; 
     margin-left: 15%;
     
   }
