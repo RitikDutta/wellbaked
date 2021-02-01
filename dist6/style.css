@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  overflow:scroll;
+  /* overflow:scroll; */
 }
 
 #contact {
@@ -16,7 +16,7 @@ body {
 .section-header {
   text-align: center;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 30px 0;
   font: 300 60px 'Oswald', sans-serif;
   letter-spacing: 6px;
   color: #fff;
@@ -204,6 +204,10 @@ hr {
     width: 60px;
     height: 60px;
     line-height: 60px;
+  }
+  #contact {
+    overflow: visible;
+    padding-bottom: 1000px;
   }
 }
 
