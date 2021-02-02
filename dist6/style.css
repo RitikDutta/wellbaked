@@ -247,8 +247,46 @@ hr {
   
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 500px) {
   .send-button {
     width: 99%;
   }
+}
+
+
+.social-media-icons-list {
+  text-align: center;
+  margin-left: -50px;
+}
+
+.social-media-icons-list li {
+  display: inline-block;
+  margin: 15px 8px;
+  /*filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);*/
+
+}
+
+/*.social-media-icons-list li:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}*/
+
+.social-media-icon img {
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -ms-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+.social-media-icon img:hover {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  
+  
+  
 }
