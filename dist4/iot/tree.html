@@ -1,0 +1,312 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Data Sync Demo: Simulated Tree Light Controller</title>
+	<meta name="author" content="Tomomi Imura  @girlie_mac">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+	* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+	html {
+	    height: 100%;
+	}
+	body {
+	    padding: 1em;
+	    margin: 0;
+	    font-family: "Helvetica Neue", "Roboto Light", "Segoe UI Web Light", "Segoe UI Light", "Segoe UI Web Regular", "Segoe UI", Helvetica, Arial, sans-serif; 
+	    color: #666;
+	    background: #fff;
+	}
+	a {
+	    color: #ce1126;
+	}
+	header {
+	    margin-bottom: 4em;
+	}
+	h1, h2, h3 {
+	    margin: 0;
+	    color: #555;
+	    text-rendering: optimizeLegibility;
+	}
+	h1 {
+	    font-size: 3.25em;
+	    margin: 0;
+	    font-weight: normal;
+	}
+	h2 {
+	    font-size: 1.2em;
+	    text-transform: uppercase;
+	    font-weight: normal;
+	}
+
+	/* Layout */
+	.container {
+	    margin-top: 3em;
+	}
+	.pref-container {
+	    margin-bottom: 2em;
+	}
+	.tree-container {
+        float: left;
+        width: 60%;
+    }
+    @media (min-width: 768px) {
+	    .container {
+	        min-width: 768px;
+	    }
+	    .pref-container {
+	        float: left;
+	        width: 40%;
+	    }
+	    .house-container {
+	        float: left;
+	        width: 60%;
+	    }
+	}
+
+    /* Lights */
+	.tree {
+	    background: url(https://raw.githubusercontent.com/pubnub/data-sync-demo/gh-pages/images/tree.png) center top no-repeat;
+	    height: 448px;
+	    width: 368px;
+	    background-size: 100%;
+	    margin: 0 auto;
+	}
+	.lights {
+	    position: relative;
+	}
+	.lights .light {
+	    position: absolute;
+	}
+	.lights .light {
+	    background: #668;
+	    width: 40px; height: 40px;
+	    border-radius: 50%;
+	    top: 70px;
+	    left: 140px;
+	}
+	.lights.on .light {
+	    background: #46DDCF;
+	    box-shadow: 0 0 15px #46DDCF;
+	}
+	.light.l1 {
+		top: 180px; left: 100px;
+	} 
+	.light.l2 {
+		top: 190px; left: 240px;
+	} 
+	.light.l3 {
+		top: 260px; left: 160px;
+	} 
+	.light.l4 {
+		top: 320px; left: 80px;
+	} 
+	.lights .light.l5 {
+		top: 300px; left: 260px;
+	} 
+
+	/* Toggel Swtch */
+	.preference {
+	    margin-bottom: 2em;
+	    border: 1px solid silver;
+	    border-radius: 8px;
+	    min-height: 90px;
+	    font-size: 1rem;
+	}
+	.caption {
+	    font-size: 1.3em;
+	    margin: 32px 20px;
+	}
+	.caption, .toggle-button {
+	    display: inline-block;
+	}
+	.preference > div {
+	    position: relative;
+	}
+	.preference > div:not(:last-child) {
+	    border-bottom: 1px silver solid;
+	}
+	.preference > div:not(:first-child) {
+	    border-top: 1px #fff solid;
+	}
+	.preference > div > div {
+	    width: 100%;
+	}
+	label {
+	    position: absolute;
+	    right: 10px;
+	    top: 25px;
+	}
+	
+	/* Checkboxes as Toggle-buttons */
+
+	input[type=checkbox] {
+	    display: none;
+	}
+	.toggle-button {
+	    cursor: pointer;
+	    background: #4DB6AC; 
+	    background: -moz-linear-gradient(top, #027E6F, #4DB6AC);
+	    background: -webkit-linear-gradient(top, #027E6F, #4DB6AC);
+	    background: linear-gradient(top, #027E6F, #4DB6AC);
+	    border-radius: 6px;
+	    border: 1px solid #555555;
+	    width: 110px;
+	    position: relative;
+	    height: 44px;
+	    color: #fff;
+	    line-height: 42px;
+	    font-size: 18px;
+	    text-shadow: 0 -1px 1px #093B5C;
+	}
+	.toggle-button:before {
+	    content: "ON";
+	    padding-left: 18px;
+
+	}
+	.toggle-button:after {
+	    content: "OFF";
+	    padding-left: 14px;
+	}
+
+	.toggle-button .switch { 
+	    display: block;
+	    width: 44px;
+	    height: 40px;
+	    border-radius: 5px;
+	    background: #D8F2F1;
+	    background: -moz-linear-gradient(top, #fefefe, #D8F2F1);
+	    background: -webkit-linear-gradient(top, #fefefe, #D8F2F1);
+	    background: linear-gradient(top, #fefefe, #D8F2F1);
+	    border: 1px solid #fff;
+	    position: absolute;
+	    top: 1px;
+	    left: 1px;
+	}
+	input[type="checkbox"]:checked + .toggle-button .switch {
+	    left: 63px;
+	}
+	input[type="checkbox"]:not(:checked) + .toggle-button {
+	    background: -moz-linear-gradient(top, #737373, #aeaeae);
+	    background: -webkit-linear-gradient(top, #737373, #aeaeae);
+	    background: linear-gradient(top, #737373, #aeaeae);
+	}
+	input[type="checkbox"]:not(:checked) + .toggle-button .switch {
+	    background: -moz-linear-gradient(top, #ececec, #d9d9d9);
+	    background: -webkit-linear-gradient(top, #ececec, #d9d9d9);
+	    background: linear-gradient(top, #ececec, #d9d9d9);
+	}
+	input[type="checkbox"]:disabled + .toggle-button {
+	    opacity: .25;
+	}
+
+
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>PubNub Data Sync Demo</h1>
+		<h2>Simple Tree Light Contoller</h2>
+	</header>
+	<section class="container">
+		<section class="pref-container">
+			<section class="preference">
+				<div>
+					<div class="caption">Light</div>
+					<label for="light">
+						<input id="light" type="checkbox">
+						<div class="toggle-button">
+							<div class="switch"></div>
+						</div>
+					</label>
+				</div>				
+			</section>
+			<p>Try this on multiple browsers to see how it works!</p>
+
+			<p>Also, check out "Smart House" demo on <a href="http://pubnub.github.io/data-sync-demo/" target="_blank">GitHub!</a></p>
+		</section>
+
+		<section class="tree-container">
+			<div class="tree">
+				<div class="lights">
+					<div class="light"></div>
+					<div class="light l1"></div>
+					<div class="light l2"></div>
+					<div class="light l3"></div>
+					<div class="light l4"></div>
+					<div class="light l5"></div>
+				</div>
+			</div>
+		</section>
+	</section>
+
+
+	<script src="https://cdn.rawgit.com/pubnub/javascript/ds-beta-develop/web/pubnub.js"></script>
+
+	<script>
+/* 
+ *  Data Sync Demo
+ *  A simulated IoT (Internet of Trees, that is!) desktop UI to demonstrate the data sync API
+ *  https://github.com/pubnub/data-sync-demo
+ * 
+ *  @girlie_mac
+ *  License: MIT
+ */
+
+(function() {
+
+    // PubNub Data Sync
+    var pubnub = PUBNUB.init({
+        subscribe_key: 'sub-c-cb09c518-75a1-11e4-a290-02ee2ddab7fe',
+        publish_key:   'pub-c-161fc194-bfd2-44e1-af19-0d44c834089d',
+    });
+
+    var tree = pubnub.sync('xmas-tree');
+
+    // "Smart Xmas Tree" UI
+    var lightSwitch = document.getElementById('light');
+    var lightsElem = document.querySelector('.lights');
+
+    function updateLight() {
+        if(lightSwitch.checked) {
+            lightsElem.classList.add('on');
+            tree.merge({'light': true});
+        } else {
+            lightsElem.classList.remove('on');
+            tree.merge({'light': false});
+        }
+    }
+
+    function syncLight(status) {
+        if(status === true) {
+            lightsElem.classList.add('on');
+            lightSwitch.checked = true;
+        } else {
+            lightsElem.classList.remove('on');
+            lightSwitch.checked = false;
+        }
+    }
+
+    // Data Sync Events
+    tree.on.ready(function(ref){
+        console.log(JSON.stringify(ref.value()));
+        syncLight(ref.value().light);
+    });
+
+    tree.on.merge(function(ref){
+        console.log(JSON.stringify(ref.value()));
+        syncLight(ref.value().light);
+    });
+
+    // UI Events
+    lightSwitch.addEventListener('change', updateLight, false);
+
+})();
+
+	</script>
+	
+</body>
+</html>

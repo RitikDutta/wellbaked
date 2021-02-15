@@ -1,0 +1,70 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Data Sync Demo: Simulated Smart Home Controller</title>
+	<meta name="description" content="D3">
+	<meta name="author" content="Tomomi Imura  @girlie_mac">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<section class="container">
+		<section class="pref-container">
+			<section class="preference">
+				<div>
+					<div class="caption">Door Lock</div>
+					<label for="door">
+						<input id="door" type="checkbox">
+						<div class="toggle-button">
+							<div class="switch"></div>
+						</div>
+					</label>
+				</div>
+
+				<div>
+					<div class="caption">Light</div>
+					<label for="light">
+						<input id="light" type="checkbox">
+						<div class="toggle-button">
+							<div class="switch"></div>
+						</div>
+					</label>
+				</div>
+				
+				<div>
+					<div class="caption">Music
+					<div class="text subtext">Warning: Music plays when it is on!</div>
+					</div>
+					<label for="music">
+						<input id="music" type="checkbox">
+						<div class="toggle-button">
+							<div class="switch"></div>
+						</div>
+					</label>
+				</div>
+
+				
+			</section>
+
+		</section>
+
+		<section class="house-container">
+			<div class="house">
+				<div class="door"></div>
+				<div class="light"></div>
+				<div class="fa fa-lock"></div>
+				<div class="fa fa-unlock"></div>
+				<div class="music fa fa-music"></div>
+			</div>
+		</section>
+	</section>
+
+	<audio id="musicPlayer" src="media/illusions.mp3" preload="auto"></audio>
+	<script src="js/pubnub.js"></script>
+	<script src="js/app.js"></script>
+	
+</body>
+</html>
