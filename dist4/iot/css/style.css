@@ -8,7 +8,7 @@ body {
     margin: 0;
     font-family: "Helvetica Neue", "Roboto Light", "Segoe UI Web Light", "Segoe UI Light", "Segoe UI Web Regular", "Segoe UI", Helvetica, Arial, sans-serif; 
     color: #666;
-    background: #f3a8e0;
+    background: rgb(168, 164, 164);
     margin: 0; height: 100%; overflow: hidden
 }
 a {
@@ -53,8 +53,20 @@ footer .credit {
     /* margin-bottom: 2em; */
     margin-top: 0px;
 }
-@media (min-width: 768px) {
+.hauto{
+    display: none;
+}
+
+
+
+@media (min-width: 1033px) {
+    .hauto{
+        display: grid;
+        text-align: center; 
+        margin-top: 50px;
+    }
     .container {
+        margin-left: 12em;
         min-width: 768px;
         margin-top: 9em;
     }
@@ -70,36 +82,64 @@ footer .credit {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* UI component styles */
 .house {
     background: url(../images/home.png) center top no-repeat;
     height: 465px;
-    width: 440px;
+    width: 330px;
     background-size: 100%;
     margin: 0 auto;
+   top: 220px;
+   margin-left: 10.5;
+   margin-right: 77px;
     position: relative;
+    left: 32px;
 }
+
 .house > div {
     position: absolute;
 }
 .house .light {
     background: #668;
-    width: 150px; height: 80px;
+    width: 130px; height: 65px;
     border-radius: 20px;
-    top: 170px;
-    left: 146px;
+    top: 128px;
+    left: 102px;
 }
 .house .light.on {
     background: #fff599;
 }
 .house .door {
     background: #aaa;
-    width: 150px; height: 140px;
+    width: 130px; height: 97px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     bottom: 50px;
-    left: 146px;
+    left: 102px;
+    top: 214px;
 }
+
 .house .door.on {
     background: #666;
 }
@@ -107,6 +147,8 @@ footer .credit {
 .house .fa-unlock {
     bottom: 80px;
     left: 190px;
+    top: 241px;
+    left: 138px;
 }
 .house .fa-lock{
     color: transparent;
@@ -127,9 +169,14 @@ footer .credit {
 .house .music.on {
     color: #ce1126;
 }
+
+
+
+
+
 .preference {
     margin-bottom: 2em;
-    border: 1px solid silver;
+    border: 1px silver;
     border-radius: 8px;
     min-height: 90px;
     font-size: 1rem;
@@ -166,8 +213,8 @@ footer .credit {
 }
 label {
     position: absolute;
-    right: 10px;
-    top: 25px;
+    top: -11px;
+    right: -144px;
 }
 .text {
     font-size: 0.9rem;
@@ -305,3 +352,517 @@ y
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  .clear {
+    clear: both;
+  }
+  
+  .phone {
+    margin: -150px auto 50px auto;
+    box-shadow: 10px 10px 10px #415260;
+  }
+  
+  .phone {
+    height: 360px;
+    width: 226px;
+    margin-left: 99px;
+    top: 223px;
+    background: #415260;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    border-left-width: 62px;
+  }
+
+  .phone .phone-shade {
+    position: absolute;
+    height: 500px;
+    width: 200px;
+    left: 50%;
+    background: #555f6b;
+    transform: rotate(18deg);
+  }
+  .phone .phone-speaker {
+    height: 8px;
+    width: 42px;
+    border-radius: 4px;
+    background: #3e4752;
+    position: relative;
+    top: 23px;
+    left: 50%;
+    margin-left: -21px;
+  }
+  .phone .phone-button {
+    height: 40px;
+    width: 40px;
+    background: #49525b;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    margin-left: -20px;
+    bottom: 10px;
+  }
+  .phone .phone-screen {
+    height: 245px;
+    width: 208px;
+    background: #f2ebe2;
+    position: absolute;
+    left: 9px;
+    top: 58px;
+    overflow: hidden;
+  }
+  .phone .phone-screen .phone-header {
+    width: 100%;
+    height: 30px;
+    background: #1e1e1e;
+    position: relative;
+    z-index: 3;
+    color: white;
+  }
+  .phone .phone-screen .phone-header .phone-menu {
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    background: white;
+    width: 15px;
+    height: 2px;
+  }
+  .phone .phone-screen .phone-header .phone-menu:before {
+    content: "";
+    width: 15px;
+    height: 2px;
+    top: 5px;
+    background: #f2ebe2;
+    position: absolute;
+  }
+  .phone .phone-screen .phone-header .phone-menu:after {
+    content: "";
+    width: 15px;
+    height: 2px;
+    top: 10px;
+    background: #f2ebe2;
+    position: absolute;
+  }
+  .phone .phone-post {
+    padding: 15px 10px;
+    border-bottom: 2px solid #62605d;
+    overflow: hidden;
+    height: 60px;
+    position: relative;
+    transform: translateY(-60px);
+    z-index: 2;
+  }
+  .phone .phone-post.active {
+    -webkit-animation: new-post 1s ease infinite;
+            animation: new-post 1s ease infinite;
+  }
+@media (min-width: 768px) {
+  .phone {
+    top:178px;
+    left: 180px;
+    right: 0px;
+  }
+}
+
+/* home */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  .post-thumb {
+    height: 29px;
+    width: 27px;
+    /* background: #b0b0b0; */
+    position: absolute;
+    margin-right: 5px;
+  }
+  
+  .post-title-1 {
+    height: 4px;
+    width: 15px;
+    margin-top: 3px;
+    /* background: #dadada; */
+    position: absolute;
+    left: 44px;
+  }
+  
+  .post-title-2 {
+    height: 4px;
+    width: 30px;
+    margin-top: 3px;
+    background: #dadada;
+    position: absolute;
+    left: 65px;
+  }
+  
+  .post-line-1 {
+    height: 4px;
+    width: 150px;
+    background: #b0b0b0;
+    position: absolute;
+    top: 27px;
+    left: 44px;
+  }
+  
+  .post-line-2 {
+    height: 4px;
+    width: 100px;
+    background: #b0b0b0;
+    position: absolute;
+    top: 36px;
+    left: 44px;
+  }
+  
+  #first-post .line {
+    width: 0;
+  }
+  
+  #first-post.active .post-thumb {
+    transform: scale(0);
+    -webkit-animation: box-grow 500ms ease 500ms forwards;
+            animation: box-grow 500ms ease 500ms forwards;
+  }
+  #first-post.active .line {
+    transition: width 500ms ease;
+    transition-delay: 600ms;
+  }
+  #first-post.active .post-title-1 {
+    width: 15px;
+  }
+  #first-post.active .post-title-2 {
+    width: 30px;
+  }
+  #first-post.active .post-line-1 {
+    width: 150px;
+  }
+  #first-post.active .post-line-2 {
+    width: 100px;
+  }
+  
+  @-webkit-keyframes new-post {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  @keyframes new-post {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  @-webkit-keyframes box-grow {
+    0% {
+      transform: scale(0) rotate(25deg);
+    }
+    60% {
+      transform: scale(1.2) rotate(-10deg);
+    }
+    100% {
+      transform: scale(1) rotate(0);
+    }
+  }
+  @keyframes box-grow {
+    0% {
+      transform: scale(0) rotate(25deg);
+    }
+    60% {
+      transform: scale(1.2) rotate(-10deg);
+    }
+    100% {
+      transform: scale(1) rotate(0);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .wifi-symbol {
+    display: none;
+  }
+  .wifi-symbol [foo], .wifi-symbol {
+    display: block;
+    position: absolute;
+    top: 290px;
+    left: 609px;
+
+    display: inline-block;
+    width: 108px;
+    height: 108px;
+    margin-top: -187.5px;
+    -ms-transform: rotate(-15deg) translate(-100px);
+    -moz-transform: rotate(-15deg) translate(-100px);
+    -o-transform: rotate(-15deg) translate(-100px);
+    -webkit-transform: rotate(-15deg) translate(-100px);
+    transform: rotate(-15deg) translate(-100px);
+  }
+  .wifi-symbol .wifi-circle {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 21.4285714286px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-color: #FFFFCC;
+    border-style: solid;
+    border-width: 1em 1em 0 0;
+    -webkit-border-radius: 0 100% 0 0;
+    border-radius: 0 100% 0 0;
+    opacity: 0;
+    -o-animation: wifianimation 3s infinite;
+    -moz-animation: wifianimation 3s infinite;
+    -webkit-animation: wifianimation 3s infinite;
+    animation: wifianimation 3s infinite;
+  }
+  .wifi-symbol .wifi-circle.first {
+    -o-animation-delay: 800ms;
+    -moz-animation-delay: 800ms;
+    -webkit-animation-delay: 800ms;
+    animation-delay: 800ms;
+  }
+  .wifi-symbol .wifi-circle.second {
+    width: 5em;
+    height: 5em;
+    -o-animation-delay: 400ms;
+    -moz-animation-delay: 400ms;
+    -webkit-animation-delay: 400ms;
+    animation-delay: 400ms;
+  }
+  .wifi-symbol .wifi-circle.third {
+    width: 3em;
+    height: 3em;
+  }
+  .wifi-symbol .wifi-circle.fourth {
+    width: 1em;
+    height: 1em;
+    opacity: 1;
+    background-color: #FFFFCC;
+    -o-animation: none;
+    -moz-animation: none;
+    -webkit-animation: none;
+    animation: none;
+  }
+  
+  @-o-keyframes wifianimation {
+    0% {
+      opacity: 0.4;
+    }
+    5% {
+      opactiy: 1;
+    }
+    6% {
+      opactiy: 0.1;
+    }
+    100% {
+      opactiy: 0.1;
+    }
+  }
+  @-moz-keyframes wifianimation {
+    0% {
+      opacity: 0.4;
+    }
+    5% {
+      opactiy: 1;
+    }
+    6% {
+      opactiy: 0.1;
+    }
+    100% {
+      opactiy: 0.1;
+    }
+  }
+  @-webkit-keyframes wifianimation {
+    0% {
+      opacity: 0.4;
+    }
+    5% {
+      opactiy: 1;
+    }
+    6% {
+      opactiy: 0.1;
+    }
+    100% {
+      opactiy: 0.1;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (min-width: 1031px) {
+    .phone{
+      left: 0px;
+      margin-left: 76px;
+      top: 89px;
+    }
+    .house{
+      top: 40px;
+          margin-left: 109px;
+    }
+  
+  }
+
+
+
+
+
+
+
+
+
+
+
+  @media (max-width: 1030px) {
+    .house {
+      top: 188px;
+      left: 0px;
+      margin-left: 249px;
+    }
+    .phone{
+      margin-right: 190px;
+      /* margin-left: 190px; */
+    }
+    .wifi-symbol [foo], .wifi-symbol {
+      /* right: 146px; */
+      left: 598px;
+      top: 578px;
+    }
+  }
+  @media (max-width: 768px) {
+    .house {
+      top: 184px;
+      left: 0px;
+      margin-left: 230px;
+    }
+    .phone {
+      top:177px;
+      left: 10%;
+      margin-left: 196px;
+    }
+    .wifi-symbol [foo], .wifi-symbol {
+      /* right: 146px; */
+      left: 586px;
+      top: 578px;
+    }
+  }
+  @media (max-width: 668px) {
+    .house {
+      top: 165px;
+      left: 0px;
+      margin-left: 152px;
+    }
+    .phone{
+      margin-left: 136px;
+    }
+    .wifi-symbol [foo], .wifi-symbol {
+      /* right: 146px; */
+      left: 514px;
+      top: 560px;
+    }
+  }
+  @media (max-width: 560px) {
+    .house {
+      top: 160px;
+      left: 0px;
+      margin-left: 102px;
+    }
+    .phone {
+      top:177px;
+      left: 0px;
+      margin-left: 145px;
+    }
+    .wifi-symbol [foo], .wifi-symbol {
+      /* right: 146px; */
+      left: 464px;
+      top: 555px;
+    }
+  }
+  @media (max-width: 430px) {
+    .house {
+      left: 0px;
+      margin-left: 40px;
+    }
+    .phone {
+      top:177px;
+      left: 0px;
+      margin-left: 74px;
+    }
+    .wifi-symbol [foo], .wifi-symbol {
+      right: 146px;
+      left: 390px;
+      top: 549px;
+    }
+  }
