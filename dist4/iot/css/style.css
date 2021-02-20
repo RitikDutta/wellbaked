@@ -8,8 +8,8 @@ body {
     margin: 0;
     font-family: "Helvetica Neue", "Roboto Light", "Segoe UI Web Light", "Segoe UI Light", "Segoe UI Web Regular", "Segoe UI", Helvetica, Arial, sans-serif; 
     color: #666;
-    background: rgb(168, 164, 164);
-    margin: 0; height: 100%; overflow: hidden
+    background-image: url('bg.jpg');
+    margin: 0; height: 100%; overflow: hidden;
 }
 a {
     color: #ce1126;
