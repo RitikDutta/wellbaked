@@ -9,6 +9,8 @@ body {
     font-family: "Helvetica Neue", "Roboto Light", "Segoe UI Web Light", "Segoe UI Light", "Segoe UI Web Regular", "Segoe UI", Helvetica, Arial, sans-serif; 
     color: #666;
     background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0; height: 100%; overflow: hidden;
 }
 a {

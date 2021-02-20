@@ -290,3 +290,17 @@ hr {
   
   
 }
+
+
+.footer {
+	position: relative;
+	font-family: 'Noto Sans', sans-serif;
+	left: 0;
+	bottom: 5.5%;
+	width: 100%;
+	height: 40px;
+	background-color: rgb(24, 24, 24);
+  color: rgb(255, 255, 255);
+  padding-top: 0.5%;
+	text-align:center;
+  }

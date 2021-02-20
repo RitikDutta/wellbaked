@@ -507,3 +507,18 @@ body > .container-fluid {
       }
     }
      
+
+
+
+    .footer {
+      position: relative;
+      font-family: 'Noto Sans', sans-serif;
+      left: 0;
+      bottom: 0;
+      width: 104%;
+      height: 40px;
+      background-color: rgb(24, 24, 24);
+      color: rgb(255, 255, 255);
+      text-align:center;
+      }
+    
