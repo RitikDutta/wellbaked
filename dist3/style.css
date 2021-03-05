@@ -725,6 +725,22 @@ h1 .logo {
     border: 2px solid #eee;
 }
 
+.footer {
+    position: relative;
+    font-family: 'Noto Sans', sans-serif;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(24, 24, 24);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.fotm {
+    width: 100%;
+    height: 100vh;
+}
+
 @media (max-width: 600px) {
     html {
         font-size: 12px;
@@ -738,23 +754,10 @@ h1 .logo {
     .marquee:after {
         width: 5rem;
     }
-}
-
-.footer {
-    position: relative;
-    font-family: 'Noto Sans', sans-serif;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    background-color: rgb(24, 24, 24);
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding-top: 0.1px;
-}
-
-@media (max-width: 600px) {
     .footer {
-        height: 70px;
+        height: 5vh;
+    }
+    .fotm {
+        height: 120vh;
     }
 }
