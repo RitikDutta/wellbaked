@@ -260,7 +260,7 @@ h1 .logo {
 
 #portfolio {
     background-color: #423a3a;
-    padding-bottom: 80px;
+    /* padding-bottom: 80px; */
 }
 
 #portfolio h2 {
@@ -303,7 +303,7 @@ h1 .logo {
 
 #portfolio .description>* {
     display: none;
-    font-size: 72%;
+    font-size: 65%;
 }
 
 #portfolio p {
@@ -486,6 +486,10 @@ h1 .logo {
 
 #contact .social-links li {
     margin-bottom: 20px;
+}
+
+.boxe {
+    height: 444px;
 }
 
 
@@ -729,11 +733,13 @@ h1 .logo {
     position: relative;
     font-family: 'Noto Sans', sans-serif;
     left: 0;
+    bottom: 0;
     width: 100%;
     height: 40px;
     background-color: rgb(24, 24, 24);
     color: rgb(255, 255, 255);
     text-align: center;
+    padding-top: 0.1px;
 }
 
 .fotm {
@@ -755,9 +761,31 @@ h1 .logo {
         width: 5rem;
     }
     .footer {
-        height: 5vh;
+        height: 70px;
     }
     .fotm {
         height: 120vh;
+    }
+    .mimg1 {
+        background-image: url('types/e-com2.jpg');
+    }
+    .mimg2 {
+        background-image: url('types/business2.jpg');
+    }
+    .mimg3 {
+        background-image: url('types/edu2.jpg');
+    }
+    .mimg4 {
+        background-image: url('types/personalb.jpg');
+    }
+    .mimg5 {
+        background-image: url('types/blogb.jpg');
+    }
+    .mimg6 {
+        background-image: url('types/nonprofitb.jpg');
+    }
+    #portfolio .description>* {
+        color: black;
+        text-shadow: 1px 2px rgb(252, 167, 181);
     }
 }
