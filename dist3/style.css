@@ -397,7 +397,6 @@ h1 .logo {
     top: -80px;
     left: -30px;
     color: rgba(4, 14, 22, .83);
-    ;
 }
 
 #portfolio section:hover .overlay .description>* {
@@ -767,25 +766,30 @@ h1 .logo {
         height: 120vh;
     }
     .mimg1 {
-        background-image: url('types/e-com2.jpg');
+        background-image: url('types/ecomv.jpg');
+        border-radius: 3%;
     }
     .mimg2 {
         background-image: url('types/business2.jpg');
+        border-radius: 3%;
     }
     .mimg3 {
         background-image: url('types/edu2.jpg');
+        border-radius: 3%;
     }
     .mimg4 {
         background-image: url('types/personalb.jpg');
+        border-radius: 3%;
     }
     .mimg5 {
         background-image: url('types/blogb.jpg');
+        border-radius: 3%;
     }
     .mimg6 {
         background-image: url('types/nonprofitb.jpg');
+        border-radius: 3%;
     }
     #portfolio .description>* {
-        color: black;
-        text-shadow: 1px 2px rgb(252, 167, 181);
+        color: white;
     }
 }
