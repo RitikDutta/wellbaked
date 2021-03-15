@@ -39,14 +39,16 @@
 .video-hero--content {
     position: relative;
     text-align: center;
-    color: #FFF;
+    font-style: oblique;
+    color: white;
     margin: 150px 0;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    text-shadow: 0 0 5px rgb(0, 0, 0);
     height: 45vh;
 }
 
 .video-hero--content h2 {
-    font-size: 34px;
+    display: none;
+    font-size: 54px;
     margin: 0 0 10px;
 }
 
@@ -362,6 +364,14 @@ a:hover .subtitle {
 
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
 
+.b {
+    display: none;
+}
+
+.over {
+    z-index: 1;
+}
+
 @media (max-width: 800px) {
     .flex-container {
         flex-direction: column;
@@ -372,6 +382,15 @@ a:hover .subtitle {
     .flex-item-right,
     .flex-item-left {
         flex: 100%;
+    }
+    .a {
+        display: none;
+    }
+    .b {
+        display: inline;
+    }
+    .video-hero--content h2 {
+        display: inline;
     }
 }
 
