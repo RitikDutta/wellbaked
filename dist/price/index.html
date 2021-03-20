@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - Responsive Menu App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500'>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+
+    <div id="menu">
+        <div class="panel"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 500 750"></svg>
+            <h1 class="price" style="margin-top: -82px; ">Days</h1>
+            <h1 class="name">Basic</h1>
+            <h2 class="type"></h2><span class="price">Starting at</span> <span class="abv" style="color: rgb(221, 169, 90);">$299</span>
+
+        </div>
+        <div class="panel"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 500 750"></svg>
+            <h1 class="price" style="margin-top: -82px; ">Days</h1>
+            <h1 class="name">Standard</h1>
+            <span class="price">Starting at</span> <span class="abv">$399</span>
+        </div>
+        <div class="panel"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 500 750"></svg>
+            <h1 class="price" style="margin-top: -82px; ">Days</h1>
+            <h1 class="name">Premium</h1>
+            <span class="price">Starting at</span> <span class="abv">$449</span>
+        </div>
+        <!-- <div class="panel"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 500 750"></svg>
+            <h1 class="name">Tuborg</h1>
+            <h2 class="type">Stout</h2><span class="price">$4</span><span class="abv">4.6%</span>
+        </div> -->
+        <form id="order">
+            <select id="choice" name="choice">
+      <option value="leffe">Leffe</option>
+      <option value="paulaner">Paulaner</option>
+      <option value="heineken">Heineken</option>
+      <option value="tuborg">Tuborg</option>
+    </select>
+            <label for="quantity">1</label>
+            <input id="quantity" type="range" min="1" max="4" value="1" step="" name="quantity" />
+            <select id="table" name="table">
+      <!-- <option value="1">Table 1</option> -->
+      <!-- <option value="2">Table 2</option>
+      <option value="3">Table 3</option>
+      <option value="4">Table 4</option>
+      <option value="5">Table 5</option>
+      <option value="6">Table 6</option>
+      <option value="7">Table 7</option>
+      <option value="8" selected="selected">Table 8</option>
+    </select> -->
+            <input class="price" id="submit" type="submit" value="Order"></input>
+            <input class="abv" id="back" type="reset" value="Cancel"></input>
+        </form>
+    </div>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
