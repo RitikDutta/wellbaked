@@ -1,106 +1,190 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
- 
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
 
-<link href="https://fonts.googleapis.com/css?family=Raleway:100,400,700" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
 
-<link href="https://fonts.googleapis.com/css?family=Oswald:200,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,700" rel="stylesheet">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,400,700" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-<script src="https://use.fontawesome.com/20ab91acc4.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="./style.css">
 
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-<section id="contact">
-  
-  <h1 class="section-header">CONTACT</h1>
-  
-  <div class="contact-wrapper">
-    
-      <!---------------- 
+
+    <!-- partial:index.partial.html -->
+    <section id="contact">
+
+        <h1 class="section-header">CONTACT</h1>
+
+        <div class="contact-wrapper">
+
+            <!---------------- 
 
       CONTACT PAGE LEFT 
     
-      -----------------> 
-    
-    <form id="contact-form" class="form-horizontal" role="form">
-       
-      <div class="form-group">
-        <div class="col-sm-12">
-          <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
-        </div>
-      </div>
+      ----------------->
+            <script type="text/javascript">
+                var submitted = false;
+            </script>
 
-      <div class="form-group">
-        <div class="col-sm-12">
-          <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
-        </div>
-      </div>
 
-      <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
-      
-      <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-        <div class="button">
-          <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
-        </div>
-      
-      </button>
-      
-    </form>
-    
-      <!---------------- 
+            <!--Update the URL for thank you page on form submit -->
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='http://wellbaked.tech/';}"></iframe>
+
+            <form class="form-horizontal" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfZpx7bjH9dA8-EKiLzcPUjy8gdR_711_t1ruoMhOmdWv6MAQ/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
+
+
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input class="form-control" type="text" placeholder="Name" id="name" required name="entry.700911292">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input class="form-control" type="text" placeholder="Email" id="email" required name="entry.945724490">
+                    </div>
+                </div>
+                <div class="w3-section">
+                    <textarea class="form-control" rows=10 type="text" placeholder="Message" id="message" required name="entry.2130013960"></textarea>
+                </div>
+
+                <div class="w3-section">
+                    <button class="btn btn-primary send-button" type="submit">SEND</button>
+                </div>
+            </form>
+            <script type="text/javascript">
+                function validateName() {
+                    var name = document.getElementById('name').value;
+                    if (name.length == 0) {
+                        alert("Name can't be blank");
+                        return false;
+
+                    }
+                    if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+                        alert("Please enter your correct name"); //Validation Message
+                        return false;
+                    }
+                    return true;
+                }
+
+                function validatePhone() {
+                    var phone = document.getElementById('phone').value;
+                    if (phone.length == 0) {
+                        alert("Phone number can't be blank"); //Validation Message
+                        return false;
+                    }
+
+                    if (!phone.match(/^[0]?[789]\d{9}$/)) {
+                        alert("Please enter a correct phone number"); //Validation Message
+                        return false;
+                    }
+
+                    return true;
+
+                }
+
+                function validateMessage() {
+                    var message = document.getElementById('message').value;
+                    if (message.length == 0) {
+                        alert("message can't be blank"); //Validation Message
+                        return false;
+                    }
+                    return true;
+
+                }
+
+                function validateEmail() {
+
+                    var email = document.getElementById('email').value;
+                    if (email.length == 0) {
+                        alert("Email can't be blank"); //Validation Message
+                        return false;
+
+                    }
+
+                    if (!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+                        alert("Please enter a correct email address"); //Validation Message
+                        return false;
+
+                    }
+
+                    return true;
+
+                }
+
+
+                function validateForm() {
+                    if (!validateName() || !validateEmail() || !validateEmail()) {
+
+                        alert("Form not submitted"); //Validation Message
+                        return false;
+                    } else {
+                        submitted = true;
+                        return true;
+                    }
+                }
+            </script>
+
+
+
+            <!---------------- 
 
       CONTACT PAGE RIGHT 
     
-      -----------------> 
-    
-      <div class="direct-contact-container">
+      ----------------->
 
-        <ul class="contact-list">
-          <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Jaipur, Rajasthan</span></i></li>
-          
-          <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:7976797325" title="Give us a call">+91 7976797325  </a></span></i></li>
-          <li class="list-item"><i class="fa  fa-2x"><span class="contact-text phone"><a href="tel:8619258978" title="Give us a call">&nbsp;&nbsp;&nbsp;&nbsp;+91 8619258978  </a></span></i></li>  
+            <div class="direct-contact-container">
 
-          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:wellbakedtech@gmail.com" title="Send us an email">wellbakedtech@gmail.com</a></span></i></li>
-          
-        </ul>
+                <ul class="contact-list">
+                    <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Jaipur, Rajasthan</span></i></li>
 
-        <hr>
-        <ul class="social-media-icons-list">
-        <li><a href="https://github.com/wellbakedtech" target="_blank" class="social-media-icon vimeo"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/github_social_media_logo-128.png" height="60px" width="60px" alt="Wordpress Icon"></a></li>
+                    <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:7976797325" title="Give us a call">+91 7976797325  </a></span></i></li>
+                    <li class="list-item"><i class="fa  fa-2x"><span class="contact-text phone"><a href="tel:8619258978" title="Give us a call">&nbsp;&nbsp;&nbsp;&nbsp;+91 8619258978  </a></span></i></li>
 
-        <li><a href="https://www.linkedin.com/in/wellbaked-tech-5a7837204" target="_blank" class="social-media-icon linkedin"><img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/linkedin-128.png" height="60px" width="60px" alt="Linkedin Icon"></a></li>
+                    <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:wellbakedtech@gmail.com" title="Send us an email">wellbakedtech@gmail.com</a></span></i></li>
 
-        <li><a href="https://www.facebook.com/Wellbakedtech-101466415283646/?view_public_for=101466415283646" target="_blank" class="social-media-icon googleplus"><img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-128.png" height="60px" width="60px" alt="Facebook Icon"></a></li>
-        <!-- <li><a href="https://www.youtube.com/channel/UCUeGZ4P-uhHNO5kb3fFuHEQ" target="_blank" class="social-media-icon imdb"><img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/youtube_circle-128.png" height="60px" width="60px" alt="IMDB Icon"></a></li> -->
-      </ul>
-      
-        <hr>
-        
-        <!-- <a href="https://twitter.com/wellbakedtech">lllllll</a> -->
-      
+                </ul>
 
-      </div>
-    
-  </div>
+                <hr>
+                <ul class="social-media-icons-list">
+                    <li>
+                        <a href="https://github.com/wellbakedtech" target="_blank" class="social-media-icon vimeo"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/github_social_media_logo-128.png" height="60px" width="60px" alt="Wordpress Icon"></a>
+                    </li>
 
-</section>
-<div class="footer">
-	<p>ALL RIGHTS RESERVED WELLBAKEDTECH  |  	&#169; 2021  |   PRIVACY POLICY   |  SITEMAP</p>
-  </div>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+                    <li>
+                        <a href="https://www.linkedin.com/in/wellbaked-tech-5a7837204" target="_blank" class="social-media-icon linkedin"><img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/linkedin-128.png" height="60px" width="60px" alt="Linkedin Icon"></a>
+                    </li>
 
+                    <li>
+                        <a href="https://www.facebook.com/Wellbakedtech-101466415283646/?view_public_for=101466415283646" target="_blank" class="social-media-icon googleplus"><img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-128.png" height="60px" width="60px" alt="Facebook Icon"></a>
+                    </li>
+                    <!-- <li><a href="https://www.youtube.com/channel/UCUeGZ4P-uhHNO5kb3fFuHEQ" target="_blank" class="social-media-icon imdb"><img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/youtube_circle-128.png" height="60px" width="60px" alt="IMDB Icon"></a></li> -->
+                </ul>
+
+                <hr>
+
+                <!-- <a href="https://twitter.com/wellbakedtech">lllllll</a> -->
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <div class="footer">
+        <p>ALL RIGHTS RESERVED WELLBAKEDTECH | &#169; 2021 | PRIVACY POLICY | SITEMAP</p>
+    </div>
+    <!-- partial -->
 </body>
+
 </html>
