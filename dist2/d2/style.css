@@ -21,9 +21,9 @@
                 
                 .et-hero-tabs h1,
                 .et-slide h1 {
-                    font-size: 2rem;
+                    font-size: 1rem;
                     margin: 0;
-                    letter-spacing: 1rem;
+                    letter-spacing: 0.5px;
                 }
                 
                 .et-hero-tabs h3,
@@ -147,5 +147,21 @@
                         bottom: 0;
                         height: 3px;
                         background: #ffffff;
+                    }
+                }
+                
+                .frame2 {
+                    height: 1500px;
+                }
+                
+                @media (max-width: 970px) {
+                    .frame2 {
+                        height: 2500px;
+                    }
+                }
+                
+                @media (max-width: 651px) {
+                    .frame2 {
+                        height: 4500px;
                     }
                 }
