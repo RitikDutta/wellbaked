@@ -133,8 +133,8 @@
 <body>
     <h3 style="color: red;">Note: This is a Demo Dataset And Does not related to real personalities.
         <br> "WellBakedTech Do Not Share Your Data With Anybody"</h3>
-    <a href="./json3.html">
-        <b style="font-size: x-large; color: yellow; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Show Products Details</b>
+    <a href="./json2.html">
+        <b style="font-size: x-large; color: yellow; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Show Customers Details</b>
     </a>
     <table id="catTable"></table>
     <script src="//code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script>
@@ -163,20 +163,27 @@
         $.ajax(settings).done(function(response) {
             console.log(response);
 
-            var data = response.customers;
+            var data = response.products;
             // $("#windSpeed").append(content);
 
             var result = [];
             var catt = [];
             for (var i in data) {
+                // document.write(JSON.stringify(data[i]["1_pack_bread"]));
                 result.push([i, data[i]]);
-                var cats = {
-                    "name": i,
-                    "age": data[i].age,
-                    "address": data[i].address,
-                    "orders": data[i].current_order,
+                // document.write(JSON.stringify(i));
+                for (var j in data[i]) {
+                    // document.write(JSON.stringify(j));
+                    // document.write(JSON.stringify(data[i][j]));
+                    var cats = {
+                        "name": i,
+                        "price": data[i][j].price,
+                        "pack": data[i][j].pack,
+                        "quantity": data[i][j].quantity,
+                        "sold": data[i][j].sold,
+                    }
+                    catt.push(cats)
                 }
-                catt.push(cats)
 
             }
 
@@ -188,16 +195,19 @@
                     "data": catt,
                     "columns": [{
                         "data": "name",
-                        title: 'User Name'
+                        title: 'Product Name'
                     }, {
-                        "data": "age",
-                        title: 'Age'
+                        "data": "pack",
+                        title: 'Pack'
                     }, {
-                        "data": "address",
-                        title: 'Address'
+                        "data": "price",
+                        title: 'Price'
                     }, {
-                        "data": "orders",
-                        title: 'No. of Orders'
+                        "data": "quantity",
+                        title: 'Quantity'
+                    }, {
+                        "data": "sold",
+                        title: 'Items Sold'
                     }]
                 });
             });
