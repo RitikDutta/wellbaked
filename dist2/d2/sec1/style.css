@@ -19,14 +19,14 @@
     position: absolute;
     place-content: center;
     width: 100%;
-    top: 12%;
+    /* top: 12%; */
 }
 
 @media (max-width: 767px) {
     .page {
         height: auto;
         margin-bottom: 20px;
-        padding-bottom: 20px;
+        padding-bottom: 50px;
         top: 0;
     }
 }
