@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+.fontopensans {
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+.fontopensansBold {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
