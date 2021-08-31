@@ -1,120 +1,124 @@
 <!doctype html>
+
 <head>
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<meta name="description" content="D3">
-	<meta name="author" content="Tomomi Imura  @girlie_mac">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.8/typicons.min.css'>
+
+    <meta name="description" content="D3">
+    <meta name="author" content="Tomomi Imura  @girlie_mac">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.8/typicons.min.css'>
 </head>
 
 <body>
 
 
-	<h2 class="hauto" style="color: black; font-weight: 1000;">Instance</h2>
+    <h2 class="hauto" style="color: black; font-weight: 1000;">Instance</h2>
 
 
-	
-	<section class="container">
-		<section class="pref-container">
-			<section class="preference">
-				<div class="phone">
-					<div class="phone-shade"></div>
-					<div class="phone-speaker"></div>
-					<div class="phone-screen">
-					  <div class="phone-header">
-						<div class="phone-menu"></div>
-					  </div>
-					  <div class="phone-post" id="first-post">
-						<div class="post-thumb"></div>
-						<div class="line post-title-1"></div>
-						<div class="line post-title-2"></div>
-						<div class="line post-line-1"></div>
-						<div class="line post-line-2"></div>
-					  </div>
+
+    <section class="container">
+        <section class="pref-container">
+            <section class="preference">
+                <div class="phone">
+                    <div class="phone-shade"></div>
+                    <div class="phone-speaker"></div>
+                    <div class="phone-screen">
+                        <div class="phone-header">
+                            <div class="phone-menu"></div>
+                        </div>
+                        <div class="phone-post" id="first-post">
+                            <div class="post-thumb"></div>
+                            <div class="line post-title-1"></div>
+                            <div class="line post-title-2"></div>
+                            <div class="line post-line-1"></div>
+                            <div class="line post-line-2"></div>
+                        </div>
 
 
-					<div class="phone-post">
-						<div class="post-thumb">DOOR LOCK</div>
-						<div class="line post-title-1">
-							<div class="caption"></div>
-							<label for="door">
+                        <div class="phone-post">
+                            <div class="post-thumb">DOOR LOCK</div>
+                            <div class="line post-title-1">
+                                <div class="caption"></div>
+                                <label for="door">
 								<input id="door" type="checkbox">
 								<div class="toggle-button">
 									<div class="switch"></div>
 								</div>
 							</label>
-						</div>	
-					</div>
+                            </div>
+                        </div>
 
-					<div class="phone-post">
-						<div class="post-thumb">LIGHT</div>
-						<div class="line post-title-1">
-							<div class="caption"></div>
-							<label for="light">
+                        <div class="phone-post">
+                            <div class="post-thumb">LIGHT</div>
+                            <div class="line post-title-1">
+                                <div class="caption"></div>
+                                <label for="light">
 								<input id="light" type="checkbox">
 								<div class="toggle-button">
 									<div class="switch"></div>
 								</div>
 							</label>
-						</div>	
-					</div>
+                            </div>
+                        </div>
 
 
-					<div class="phone-post">
-						<div class="post-thumb">MUSIC</div>
-						<div class="line post-title-1">
-							<div class="caption"></div>
-							<label for="music">
+                        <div class="phone-post">
+                            <div class="post-thumb">MUSIC</div>
+                            <div class="line post-title-1">
+                                <div class="caption"></div>
+                                <label for="music">
 								<input id="music" type="checkbox">
 								<div class="toggle-button">
 									<div class="switch"></div>
 								</div>
 							</label>
-						</div>	
-					</div>
-				   
-					
-				  </div> <!-- Phone Screen-->
-					<div class="phone-button"></div>
-				  </div><!--Phone -->
-			
-
-			</section>
-
-		</section>
-		<section>
-			<div class="wifi-symbol">
-				<div class="wifi-circle first"></div>
-				<div class="wifi-circle second"></div>
-				<div class="wifi-circle third"></div>	
-				<div class="wifi-circle fourth">
-			  </div>
-		</section>	
-		<section class="house-container">
-			<div class="house">
-				<div class="door"></div>
-				<div class="light"></div>
-				<div class="fa fa-lock"></div>
-				<div class="fa fa-unlock"></div>
-				<div class="music fa fa-music"></div>
-			</div>
-		</section>
-	</section>
+                            </div>
+                        </div>
 
 
-	<audio id="musicPlayer" src="media/illusions2.mp3" preload="auto"></audio>
+                    </div>
+                    <!-- Phone Screen-->
+                    <div class="phone-button"></div>
+                </div>
+                <!--Phone -->
 
-	
+
+            </section>
+
+        </section>
+        <section>
+            <div class="wifi-symbol">
+                <div class="wifi-circle first"></div>
+                <div class="wifi-circle second"></div>
+                <div class="wifi-circle third"></div>
+                <div class="wifi-circle fourth">
+                </div>
+        </section>
+        <section class="house-container">
+            <div class="house">
+                <div class="door"></div>
+                <div class="light"></div>
+                <div class="fa fa-lock"></div>
+                <div class="fa fa-unlock"></div>
+                <div class="music fa fa-music"></div>
+            </div>
+        </section>
+    </section>
 
 
-	<script src="js/pubnub.js"></script>
-	<script src="js/app.js"></script>
-	
+    <audio id="musicPlayer" src="media/illusions2.mp3" preload="auto"></audio>
+
+
+
+
+    <script src="js/pubnub.js"></script>
+    <script src="js/app.js"></script>
+
 </body>
+
 </html>
