@@ -1,9 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 .fontsans {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 .fontsansBold {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.mainFontBold {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.mainFontBold {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     font-weight: bold;
 }
