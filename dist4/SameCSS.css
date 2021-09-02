@@ -1,8 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
-.fontopensans {
-    font-family: 'ZCOOL KuaiLe', cursive;
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
 }
 
-.fontopensansBold {
-    font-family: 'ZCOOL KuaiLe', cursive;
+.fontsans {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.fontsansBold {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.fontlato {
+    font-family: 'Lato', sans-serif;
+}
+
+.fontlatoBold {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.mainFont {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+.mainFontBold {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
