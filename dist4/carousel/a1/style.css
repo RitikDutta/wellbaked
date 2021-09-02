@@ -252,9 +252,8 @@ body {
     margin-top: 0;
     border-radius: 3px;
     transition: all 0.3s;
-    font-family: 'Seymour One', sans-serif;
     left: -100px;
-    font-size: 250%;
+    font-size: 300%;
     bottom: 250px;
     text-align: left;
 }
@@ -262,7 +261,7 @@ body {
 @media (max-width: 900px) {
     .box-guide {
         font-size: 250%;
-        left: -20px;
+        left: 0px;
     }
     #container {
         left: 66px;
@@ -273,7 +272,7 @@ body {
     .box-guide {
         font-size: 3vmax;
         left: 10px;
-        top: 10px;
+        top: 100px;
     }
     #container {
         left: 6px;
