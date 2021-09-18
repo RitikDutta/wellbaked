@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 body {
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
+    /* font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;     */
+    /* font-family: 'Roboto', sans-serif;
+    font-style: italic; */
 }
-h1{
-    font-family: 'Roboto', sans-serif;
-    
+h1,h2,h3,h4{
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .fontsans {
@@ -29,10 +33,12 @@ h1{
 }
 
 .mainFont {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-style: italic;
 }
-
+.medium {
+    font-size:large;
+}
 .mainFontBold {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
