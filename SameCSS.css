@@ -36,6 +36,9 @@ h1,h2,h3,h4{
     font-family: 'Source Sans Pro', sans-serif;
     font-style: italic;
 }
+.footerFont{
+    font-family: 'Noto Sans', sans-serif;
+}
 .medium {
     font-size:large;
 }
