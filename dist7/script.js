@@ -1,132 +1,70 @@
-(function(){
-
-  var slideshow = document.getElementById('slideshow'),
-      imgs = slideshow.getElementsByTagName('img'),
-      count = 0,
-      timer,
-      previous;
-  
-  function next(){
-    previous = count > 0 ? count - 1 : 0;
-    imgs[ previous ].className = imgs[ previous ].className.replace(/\bis\-active\b/i, '' );
-    
-    if( count < imgs.length ){
-      imgs[ count ].className += 'is-active';
-      count++;
-    }  
-    else{
-      count = 0;
-      next();
-    }
-  }
-  
-  next();
-  
-  timer = setInterval(function(){
-    next();
-  }, 2000);
-  
-  })();
+$( document ).ready(function() {
+  // Main variables
+    var $aboutTitle = $('.about-myself .content h2');
+    var $developmentWrapper = $('.development-wrapper');
+    var developmentIsVisible = false;
 
 
+  /* ####### HERO SECTION ####### */
+
+  $('.hero .content .header').delay(500).animate({
+    'opacity':'1',
+    'top': '50%'
+  },1000);
 
 
+  $(window).scroll( function(){
 
+    var bottom_of_window = $(window).scrollTop() + $(window).height();
 
-  (function(){
+    /* ##### ABOUT MYSELF SECTION #### */
+    if( bottom_of_window > ($aboutTitle.offset().top + $aboutTitle.outerHeight())){
+      $('.about-myself .content h2').addClass('aboutTitleVisible');
+    } 
+  /* ##### EXPERIENCE SECTION #### */
 
-    var slideshow = document.getElementById('slideshow2'),
-        imgs = slideshow.getElementsByTagName('img'),
-        count = 0,
-        timer,
-        previous;
-    
-    function next(){
-      previous = count > 0 ? count - 1 : 0;
-      imgs[ previous ].className = imgs[ previous ].className.replace(/\bis\-active\b/i, '' );
-      
-      if( count < imgs.length ){
-        imgs[ count ].className += 'is-active';
-        count++;
-      }  
-      else{
-        count = 0;
-        next();
-      }
-    }
-    
-    next();
-    
-    timer = setInterval(function(){
-      next();
-    }, 2000);
-    
-    })();
-  
-  
-  // anim 2
+      // Check the location of each element hidden */
+      $('.experience .content .hidden').each( function(i){
 
-    (function(){
+          var bottom_of_object = $(this).offset().top + $(this).outerHeight();
 
-      var slideshow = document.getElementById('slideshow3'),
-          imgs = slideshow.getElementsByTagName('img'),
-          count = 0,
-          timer,
-          previous;
-      
-      function next(){
-        previous = count > 0 ? count - 1 : 0;
-        imgs[ previous ].className = imgs[ previous ].className.replace(/\bis\-active\b/i, '' );
-        
-        if( count < imgs.length ){
-          imgs[ count ].className += 'is-active';
-          count++;
-        }  
-        else{
-          count = 0;
-          next();
-        }
-      }
-      
-      next();
-      
-      timer = setInterval(function(){
-        next();
-      }, 2000);
-      
-      })();
-    
-// anim 3
+          /* If the object is completely visible in the window, fadeIn it */
+          if( bottom_of_window > bottom_of_object ){
 
-      
-      (function(){
+            $(this).animate({
+              'opacity':'1',
+              'margin-left': '0'
+            },600);
+          }
+      });
 
-        var slideshow = document.getElementById('slideshow4'),
-            imgs = slideshow.getElementsByTagName('img'),
-            count = 0,
-            timer,
-            previous;
-        
-        function next(){
-          previous = count > 0 ? count - 1 : 0;
-          imgs[ previous ].className = imgs[ previous ].className.replace(/\bis\-active\b/i, '' );
-          
-          if( count < imgs.length ){
-            imgs[ count ].className += 'is-active';
-            count++;
-          }  
-          else{
-            count = 0;
-            next();
+  /*###### SKILLS SECTION ######*/
+
+    var middle_of_developmentWrapper = $developmentWrapper.offset().top + $developmentWrapper.outerHeight()/2;
+
+    if((bottom_of_window > middle_of_developmentWrapper)&& (developmentIsVisible == false)){
+
+      $('.skills-bar-container li').each( function(){
+
+        var $barContainer = $(this).find('.bar-container');
+        var dataPercent = parseInt($barContainer.data('percent'));
+        var elem = $(this).find('.progressbar');
+        var percent = $(this).find('.percent');
+        var width = 0;
+
+        var id = setInterval(frame, 15);
+
+        function frame() {
+          if (width >= dataPercent) {
+              clearInterval(id);
+          } else {
+            width++;
+            elem.css("width", width+"%");
+            percent.html(width+" %");
           }
         }
-        
-        next();
-        
-        timer = setInterval(function(){
-          next();
-        }, 2000);
-        
-        })();
-      
-      
+      });
+      developmentIsVisible = true;
+    }
+  }); // -- End window scroll --
+});
