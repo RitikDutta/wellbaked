@@ -34,7 +34,7 @@ section {
 .hero {
   height: 100%;
   /* background: url("ai2.jpg"); */
-  background-color: #ce4813;
+  background-color:transparent;
   background-size: cover;
   background-position: center;
 }
@@ -289,7 +289,7 @@ section {
   transition: opacity 0.4s;
 }
 .resume .content a .btn-resume:hover i {
-  top: 0;
+  top: -5%;
 }
 
 /*##### PORTFOLIO SECTION #####*/
@@ -548,7 +548,7 @@ section {
   }
 }
 
-
+/* cosmic bg */
 /* Header */
 .large-header {
   position: relative;
@@ -560,8 +560,8 @@ section {
   z-index: 1;
 }
 #large-header {
-  background-image: url("https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg");
-}
+  background-image: url("AboutUs_BG.jpg");
+  }
 .main-title {
   position: absolute;
   margin: 0;
@@ -589,7 +589,7 @@ section {
 
 
 .wrapper {
-  color: #0c6ab0;
+  color: whitesmoke;
   /* padding: 100px; */
   width: 500px;
   display: block;
